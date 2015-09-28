@@ -33,5 +33,5 @@
 <br>
 + microsoft critical section
 <br>
-+ результаты тестов
+  + результаты тестов
 <br>
