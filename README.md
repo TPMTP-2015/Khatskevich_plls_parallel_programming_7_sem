@@ -1,13 +1,16 @@
 # plls_parallel_programming_7_sem
 
 1 Урок
-
-
+<br>
 1) pthreads
+<br>
 2) OpemMP
+<br>
 3) Intel building blocks
+<br>
 
 задание :
+<br>
 -прочитать про shedule
 -написать программу на всез трех примитивах распаралелливания, которая
   берет массив и суммирует его члены
