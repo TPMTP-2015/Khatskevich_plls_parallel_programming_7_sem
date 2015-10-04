@@ -9,7 +9,7 @@ typedef unsigned long mytype;
 
 static void * func_add( void *arg){
     volatile mytype *p = (mytype *) arg;
-    for( int i = 0; i < 1000000 ; i++){
+    for( int i = 0; i < 100000000 ; i++){
         __sync_fetch_and_add(p, 1);
     }
     return 0;
@@ -17,7 +17,7 @@ static void * func_add( void *arg){
 
 static void * func_sub( void *arg){
     volatile mytype *p = (mytype *) arg;
-    for( int i = 0; i < 1000000 ; i++){
+    for( int i = 0; i < 100000000 ; i++){
         __sync_fetch_and_add(p, -1);
     }
     return 0;

@@ -15,7 +15,7 @@ struct arg {
 static void * func_add( void *argum){
     const unsigned long ME = 1;
     arg *a = (arg *) argum;
-    for( int i = 0; i < 1000000 ; i++){
+    for( int i = 0; i < 100000000 ; i++){
         while ( __sync_val_compare_and_swap(&a->num, -1, ME) != -1);
         a->p[0]++;
         a->num = -1;
@@ -26,7 +26,7 @@ static void * func_add( void *argum){
 static void * func_sub( void *argum){
     const unsigned long ME = 2;
     arg *a = (arg *) argum;
-    for( int i = 0; i < 1000000 ; i++){
+    for( int i = 0; i < 100000000 ; i++){
         while ( __sync_val_compare_and_swap(&a->num, -1, ME) != -1);
         a->p[0]--;
         a->num = -1;

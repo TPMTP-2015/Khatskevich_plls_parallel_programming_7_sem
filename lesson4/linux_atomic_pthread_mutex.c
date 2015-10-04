@@ -10,7 +10,7 @@ pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;
 
 static void * func_add( void *arg){
     volatile mytype *p = (mytype *) arg;
-    for( int i = 0; i < 1000000 ; i++){
+    for( int i = 0; i < 100000000 ; i++){
         pthread_mutex_lock(&mut);
         (*p)++;
         pthread_mutex_unlock(&mut);
@@ -20,7 +20,7 @@ static void * func_add( void *arg){
 
 static void * func_sub( void *arg){
     volatile mytype *p = (mytype *) arg;
-    for( int i = 0; i < 1000000 ; i++){
+    for( int i = 0; i < 100000000 ; i++){
         pthread_mutex_lock(&mut);
         (*p)--;
         pthread_mutex_unlock(&mut);
