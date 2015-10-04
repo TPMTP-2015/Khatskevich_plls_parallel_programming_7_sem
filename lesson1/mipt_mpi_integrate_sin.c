@@ -29,6 +29,7 @@ int main(int argc, char* argv[])
         sscanf( argv[1] , "%lf", &a);
         sscanf( argv[2] , "%lf", &b);
         sscanf( argv[3] , "%lf", &dx);
+        // works only for ne4etnix functions
         dx = fabs(dx);
         dx_2 = dx/2;
         if ( fabs(a) > fabs(b) ) {
