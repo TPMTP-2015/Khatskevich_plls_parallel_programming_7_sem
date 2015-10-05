@@ -9,7 +9,8 @@
 |linux atomic compare and swap |24713838320  | 0|
 |linux atomix sync | 3040531522 | 0 |
 |pthread mutex | 49474679298  | 0|
-|microsoft handle mutex | | | 
+|microsoft non atomic volatile | 556791799| 544015 | 
+|microsoft handle mutex | 1302553918912| 0| 
 |microsoft critical section | | |
 <br>
 
