@@ -1,16 +1,15 @@
-# tests results ( + 100 000 000 - 100 000 000 )
+# урок 3
 
+|Name|threads |cycle run times |time|
+|--------------|------:|----------:|---------:|
+|pthread spinlock |100| 1000000 |1:31.7 |
+|pthread mutex |100| 1000000 |26.8 |
+|pthread spinlock |20| 10000000 |38.5 |
+|pthread mutex |20| 10000000 | 54.9|
+|pthread spinlock |5| 10000000 |3.5 |
+|pthread mutex |5| 10000000 |13.6 |
+|pthread spinlock |2| 100000000 |3.5 |
+|pthread mutex |2| 100000000 |22.2 |
 
-урок 4
-
-|Name|time in cycles|result|
-|-----------------------|---------:|---------:|
-|linux non atomic volatile | 1004149408 | -2652775|
-|linux atomic compare and swap |24713838320  | 0|
-|linux atomix sync | 3040531522 | 0 |
-|pthread mutex | 49474679298  | 0|
-|microsoft non atomic volatile | 556791799| 544015 | 
-|microsoft handle mutex | 1302553918912| 0| 
-|microsoft critical section | | |
 <br>
 
